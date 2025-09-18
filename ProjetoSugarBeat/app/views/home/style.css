@@ -1,0 +1,195 @@
+:root {
+    --fontfamily: 'Caalibri', serif;
+    --cor-primaria: #3b2500ff;
+    --cor-secundaria: #fff0d0ff;
+    --cor-terceira: rgb(253, 230, 182);
+    --TamanhoFont-Titulo: 60px;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fontfamily);
+}
+
+.main-content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+/* BANNER  */
+
+.banner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.banner-img {
+    width: 100%;
+    object-fit: cover;
+    box-shadow: 0 6px 18px rgb(76, 56, 0);
+    display: block;
+}
+
+/* PREÇOS */
+
+.tabela-precos {
+    text-align: center;
+    margin-bottom: 120px;
+}
+
+.titulo-precos {
+    font-size: var(--TamanhoFont-Titulo);
+    color: #3c230d;
+    margin-bottom: 80px;
+    font-family: var(--fontfamily);
+    margin-top: 60px;
+
+}
+
+.precos-grid {
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+}
+
+.preco-item {
+    background-color: var(--cor-terceira);
+    border-radius: 7px;
+    padding: 15px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    color: #3c230d;
+}
+
+.preco-item h3 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+/* PRODUTOS */
+
+.produtos {
+    background-color: var(--cor-secundaria);
+    text-align: center;
+}
+
+.sabores {
+    font-size: var(--TamanhoFont-Titulo);
+    color: var(--cor-primaria);
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    flex-wrap: wrap;
+    margin-left: 80px;
+    margin-right: 70px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+
+.card {
+    width: 150px;
+    background-color: var(--cor-terceira);
+    padding: 15px;
+    border-radius: 7px;
+}
+
+.card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 7px;
+}
+
+.card p {
+    margin: 10px 0;
+    color: var(--cor-primaria);
+    font-weight: bold;
+}
+
+.adicionar-btn {
+    background-color: var(--cor-primaria);
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+@media (max-width: 768px) {
+
+    /* Ajustes para o banner */
+    .banner-img {
+        height: 200px;
+        margin-top: 0;
+    }
+
+    /* Redução do tamanho da fonte dos títulos */
+    .sabores {
+        margin-top: 60px;
+        font-size: 40px;
+    }
+
+    .titulo-precos {
+        font-size: 40px;
+        margin-top: 20px;
+    }
+
+    /* Ajuste do grid de produtos */
+    .grid {
+        gap: 30px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    /* Ajuste do tamanho dos cartões de produto */
+    .card {
+        width: 130px;
+        padding: 10px;
+    }
+
+    .card img {
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner-img {
+        height: 150px;
+    }
+
+    .sabores {
+        font-size: 30px;
+    }
+
+    .titulo-precos {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .grid {
+        gap: 20px;
+    }
+
+    .card {
+        width: 100px;
+    }
+
+    .card img {
+        height: 90px;
+    }
+
+    .preco-item {
+        padding: 10px 15px;
+        font-size: 16px;
+    }
+}

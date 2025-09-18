@@ -1,0 +1,180 @@
+:root {
+    --fontfamily: 'Caalibri', serif;
+    --cor-primaria: #3b2500ff;
+    --cor-secundaria: #fff0d0ff;
+    --cor-terceira: rgb(252, 218, 143);
+    --TamanhoFont-Titulo: 60px;
+}
+
+body {
+    background-color: var(--cor-secundaria);
+    font-family: var(--fontfamily);
+}
+
+.topo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: var(--cor-primaria);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 50%;
+
+}
+
+.nome-empresa {
+    font-size: 34px;
+    font-weight: bold;
+    color: var(--cor-secundaria);
+}
+
+.icons {
+    display: flex;
+    gap: 45px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.icon {
+    border-radius: 50%;
+}
+
+.carrinho-icon {
+    font-size: 20px;
+    color: var(--cor-secundaria);
+}
+
+.carrinho-contador {
+    color: var(--cor-secundaria);
+}
+
+.avatar-icon {
+    font-size: 30px;
+    color: var(--cor-terceira);
+    cursor: pointer;
+}
+
+.user-profile-info {
+    display: flex;
+    align-items: center;
+    /* Alinha verticalmente os itens no centro */
+    gap: 8px;
+    /* Adiciona um espaço entre o ícone e o nome */
+    cursor: pointer;
+}
+
+.nome-usuario {
+    font-size: 16px;
+    color: var(--cor-secundaria);
+    font-weight: 500;
+}
+
+.historico-icon {
+    font-size: 26px;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+.perfil-menu {
+    position: relative;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 40px;
+    /* distância abaixo do ícone */
+    right: -20px;
+    background: var(--cor-terceira);
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    min-width: 150px;
+    z-index: 1000;
+}
+
+.dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-size: 14px;
+}
+
+.dropdown a:hover {
+    color: rgb(139, 88, 0);
+}
+
+@media (max-width: 992px) {
+    .nome-empresa {
+        font-size: 26px;
+    }
+
+    .icons {
+        gap: 25px;
+    }
+
+    .avatar-icon {
+        font-size: 26px;
+    }
+
+    .historico-icon {
+        font-size: 22px;
+    }
+}
+
+/* Celulares */
+/* Ajustes só no mobile */
+@media (max-width: 600px) {
+    .topo {
+        height: 60px; /* um pouco menor */
+    }
+
+    .logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nome-empresa {
+        font-size: 28px; /* menor pra caber melhor */
+        margin-right: 20px;
+    }
+
+    .icons {
+        gap: 15px; /* diminui o espaço entre os ícones */
+    }
+
+    .carrinho-icon {
+        font-size: 15px; /* aumenta */
+    }
+
+    .avatar-icon {
+        font-size: 22px; /* aumenta */
+    }
+
+    .nome-usuario {
+        font-size: 15px; /* maior pra enxergar melhor */
+    }
+
+    .carrinho-contador {
+        font-size: 15px;
+        font-weight: bold;
+    }
+}

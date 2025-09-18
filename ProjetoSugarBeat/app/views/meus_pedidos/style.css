@@ -1,0 +1,63 @@
+/* Fundo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5e6c4; /* Bege claro */
+    /* margin: 0;
+    padding: 30px; */
+}
+
+/* Container centralizado */
+.container {
+    max-width: 1200px;
+    max-height: 500px;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 10px;
+    background-color: #3d2500; /* Marrom escuro */
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    overflow-y: auto; /* Adiciona a barra de rolagem vertical */
+    padding-right: 20px; 
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    color: #f5e6c4; /* Dourado claro */
+    margin-bottom: 20px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 1px; /* Espaço entre linhas */
+}
+
+/* Cabeçalho */
+thead tr {
+    background-color: #f5e6c4; /* Dourado */
+    color: #3d2500; /* Marrom escuro */
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+th {
+    padding: 12px;
+    text-align: center;
+}
+
+/* Linhas */
+tbody tr {
+    background-color: white; /* Marrom mais claro */
+    color: #3d2500;
+    border-radius: 8px;
+}
+
+tbody td {
+    padding: 12px;
+    text-align: center;
+}
